@@ -19,7 +19,7 @@ requests.packages.urllib3.disable_warnings()
 def get1_token():
     global tokenKey, base_url
     te_api_config = ConfigParser()
-    te_api_config.read("TE_Config.ini")
+    te_api_config.read("TE_Token_Access.ini")
     tokenKey = te_api_config['TE']['token']
     base_url = te_api_config['TE']['base_url']
     
