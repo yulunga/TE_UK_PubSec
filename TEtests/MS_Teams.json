@@ -1,0 +1,13 @@
+$ curl -i https://api.thousandeyes.com/v6/tests/agent-to-server/new.json \
+  -d '{ "interval": 300,
+        "agents": [
+          {"agentId": 113}
+        ],
+        "testName": "API agent-to-server test addition for www.thousandeyes.com",
+        "server": "www.thousandeyes.com",
+        "port": 80,
+        "alertsEnabled": 0
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -u noreply@thousandeyes.com:g351mw5xqhvkmh1vq6zfm51c62wyzib2
