@@ -21,13 +21,14 @@ def main():
 
 
 def menu():
+    print()
     print("************ Welcome to ThousandEyes Demo **************")
     print()
 
     choice = input("""
-                      A: Please Register
-                      B: Login
-                      Q: Logout
+                      1: List all services
+                      2: Add new services
+                      3: My TE configuration
 
                       Please enter your choice: """)
 
