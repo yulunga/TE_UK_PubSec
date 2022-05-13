@@ -39,12 +39,13 @@ def TE_test_list(token, url):
     TEtestlist = resp["test"]
     return TEtestlist
 
+def call_TE_test():
 # Assign obtained authentication token to a variable
 # URL address
-auth_token = get1_token()
+    auth_token = get1_token()
 
 # Get list of hosts
-get_testlist = TE_test_list(auth_token, base_url)
+    get_testlist = TE_test_list(auth_token, base_url)
 
 # Display in table
 print("\n Test List from ThousandEyes Instance")
@@ -58,3 +59,5 @@ for TElist in get_testlist:
                                               type=TElist["type"]))
 
 print("\n")
+
+call_TE_test()

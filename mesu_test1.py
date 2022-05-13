@@ -11,6 +11,7 @@ __license__ = "Cisco Sample Code License, Version 1.1"
 import os
 import csv
 import sys
+from TE_ListTests import 
 
 
 
@@ -26,7 +27,7 @@ def menu():
     print()
 
     choice = input("""
-                      1: List all services
+                      1: List TE tests
                       2: Add new services
                       3: My TE configuration
                       4: Exit
