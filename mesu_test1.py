@@ -8,11 +8,16 @@ __copyright__ = "Copyright (c) 2022"
 __license__ = "Cisco Sample Code License, Version 1.1"
 
 # Import necessary modules
+import os
 import csv
 import sys
 
+
+
+
 def main():
-   menu()
+    os.system('clear')
+    menu()
 
 
 def menu():
