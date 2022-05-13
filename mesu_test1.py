@@ -11,7 +11,7 @@ __license__ = "Cisco Sample Code License, Version 1.1"
 import os
 import csv
 import sys
-from TE_ListTests import 
+from TE_ListTests import call_TE_test
 
 
 
@@ -35,7 +35,7 @@ def menu():
                       Please enter your choice: """)
 
     if choice == "1" or choice =="a":
-        register()
+        call_TE_test()
     elif choice == "2" or choice =="b":
         login()
     elif choice=="3" or choice=="q":
