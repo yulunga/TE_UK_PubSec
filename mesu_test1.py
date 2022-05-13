@@ -29,17 +29,20 @@ def menu():
                       1: List all services
                       2: Add new services
                       3: My TE configuration
+                      4: Exit
 
                       Please enter your choice: """)
 
-    if choice == "A" or choice =="a":
+    if choice == "1" or choice =="a":
         register()
-    elif choice == "B" or choice =="b":
+    elif choice == "2" or choice =="b":
         login()
-    elif choice=="Q" or choice=="q":
+    elif choice=="3" or choice=="q":
+        sys.exit
+    elif choice=="4" or choice=="q":
         sys.exit
     else:
-        print("You must only select either A or B")
+        print("Please select a valid option")
         print("Please try again")
         menu()
 
