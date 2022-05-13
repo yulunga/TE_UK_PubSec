@@ -48,13 +48,13 @@ def call_TE_test():
     get_testlist = TE_test_list(auth_token, base_url)
 
 # Display in table
-print("\n Test List from ThousandEyes Instance")
-print("\n {testId:9} {testName:30} {type:10}".format(testId="   ID", testName="Name", type="Type"))
-print("\n")
+    print("\n Test List from ThousandEyes Instance")
+    print("\n {testId:9} {testName:30} {type:10}".format(testId="   ID", testName="Name", type="Type"))
+    print("\n")
 
-for TElist in get_testlist:
+    for TElist in get_testlist:
     #print("{testId}")
-    print ("{testId:10} {testName:30} {type:10}".format(testId=TElist["testId"], 
+        print ("{testId:10} {testName:30} {type:10}".format(testId=TElist["testId"], 
                                               testName=TElist["testName"], 
                                               type=TElist["type"]))
 
