@@ -11,9 +11,7 @@ __license__ = "Cisco Sample Code License, Version 1.1"
 import os
 import csv
 import sys
-from TE_ListTests import call_TE_test
-
-
+from TE_ListTests import *
 
 
 def main():
